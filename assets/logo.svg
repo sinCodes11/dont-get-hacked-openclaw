@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="100%" style="stop-color:#00cc66"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="200" height="200" rx="32" fill="url(#bg)"/>
+  <g transform="translate(100,100)">
+    <g>
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#00ff88" stroke-width="1.5" opacity="0.15"/>
+      <circle cx="0" cy="0" r="35" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.1"/>
+    </g>
+    <g filter="url(#glow)">
+      <path d="M-20,-30 L-20,20 Q-20,40 0,50 Q20,40 20,20 L20,-30 Q10,-40 0,-45 Q-10,-40-20,-30Z" fill="none" stroke="url(#accent)" stroke-width="2"/>
+      <path d="M-8,5 L0,15 L8,-5" fill="none" stroke="#00ff88" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g opacity="0.5">
+      <line x1="-8" y1="25" x2="0" y2="35" stroke="#00ff88" stroke-width="1"><animate attributeName="opacity" values="0.5;0;0.5" dur="1.5s" repeatCount="indefinite"/></line>
+      <line x1="0" y1="25" x2="8" y2="35" stroke="#00ff88" stroke-width="1"><animate attributeName="opacity" values="0.5;0;0.5" dur="1.5s" repeatCount="indefinite"/></line>
+    </g>
+    <g opacity="0.08">
+      <text x="0" y="52" text-anchor="middle" font-family="monospace" font-size="6" fill="#00ff88">ALWAYS HARDEN</text>
+    </g>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#00ff88" stroke-width="0.5" opacity="0">
+      <animate attributeName="r" values="45;60" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
