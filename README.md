@@ -1,7 +1,7 @@
 # how i locked down a VPS before letting another AI agent move in
 
 <div align="center">
-  <img src="assets/logo.svg" width="200" height="200" />
+  <img src="assets/banner.svg" width="100%" />
 </div>
 
 <p align="center">
