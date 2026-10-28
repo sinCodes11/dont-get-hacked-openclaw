@@ -1,62 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
   <defs>
-    <linearGradient id="bgDh" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0a0a0a"/>
-      <stop offset="50%" style="stop-color:#050505"/>
-      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    <linearGradient id="bgPr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="accentDh" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00ff88"/>
-      <stop offset="100%" style="stop-color:#00cc66"/>
-    </linearGradient>
-    <linearGradient id="scanlineDh" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:transparent"/>
-      <stop offset="50%" style="stop-color:#00ff88;stop-opacity:0.1"/>
-      <stop offset="100%" style="stop-color:transparent"/>
-    </linearGradient>
-    <filter id="glowDh"><feGaussianBlur stdDeviation="3"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <filter id="glowStrongDh"><feGaussianBlur stdDeviation="5"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <clipPath id="clipDh"><rect width="900" height="200" rx="16"/></clipPath>
   </defs>
-  <g clip-path="url(#clipDh)">
-    <rect width="900" height="200" rx="16" fill="url(#bgDh)"/>
-    <rect width="900" height="200" rx="16" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.15"/>
-    <rect x="0" y="0" width="900" height="200" fill="url(#scanlineDh)" opacity="0">
-      <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite"/>
-    </rect>
-    <g transform="translate(65,100)">
-      <g filter="url(#glowDh)">
-        <circle cx="0" cy="0" r="42" fill="none" stroke="#00ff88" stroke-width="1.5" opacity="0.15"/>
-        <circle cx="0" cy="0" r="35" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.1"/>
-        <path d="M-20,-30 L-20,20 Q-20,40 0,50 Q20,40 20,20 L20,-30 Q10,-40 0,-45 Q-10,-40-20,-30Z" fill="none" stroke="url(#accentDh)" stroke-width="2"/>
-        <path d="M-8,5 L0,15 L8,-5" fill="none" stroke="#00ff88" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <line x1="-8" y1="25" x2="0" y2="35" stroke="#00ff88" stroke-width="1" opacity="0.5">
-          <animate attributeName="opacity" values="0.5;0;0.5" dur="1.5s" repeatCount="indefinite"/>
-        </line>
-        <line x1="0" y1="25" x2="8" y2="35" stroke="#00ff88" stroke-width="1" opacity="0.5">
-          <animate attributeName="opacity" values="0.5;0;0.5" dur="1.5s" repeatCount="indefinite"/>
-        </line>
-      </g>
-      <circle cx="0" cy="0" r="50" fill="none" stroke="#00ff88" stroke-width="0.5" opacity="0">
-        <animate attributeName="r" values="40;65" dur="3s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.2;0" dur="3s" repeatCount="indefinite"/>
-      </circle>
-    </g>
-    <g transform="translate(180,55)">
-      <text x="0" y="0" font-family="monospace" font-size="36" font-weight="bold" fill="#00ff88" filter="url(#glowStrongDh)">
-        dont-get-hacked
-        <animate attributeName="opacity" values="1;0.92;1" dur="2.5s" repeatCount="indefinite"/>
-      </text>
-      <text x="0" y="0" font-family="monospace" font-size="36" font-weight="bold" fill="#00ff88" opacity="0.2">
-        <animate attributeName="opacity" values="0.2;0.5;0.2" dur="0.06s" repeatCount="indefinite"/>
-        dont-get-hacked
-      </text>
-      <text x="0" y="30" font-family="monospace" font-size="16" fill="#00cc66" opacity="0.5">openclaw</text>
-      <text x="0" y="55" font-family="monospace" font-size="12" fill="#888" letter-spacing="2">VPS HARDENING FOR AI AGENTS</text>
-      <text x="0" y="75" font-family="monospace" font-size="10" fill="#666" letter-spacing="1">SSH · FIREWALL · APPARMOR · KERNEL</text>
-    </g>
-    <g transform="translate(780, 170)" opacity="0.35">
-      <text font-family="monospace" font-size="9" fill="#00ff88">AI</text>
-    </g>
-  </g>
+  <rect width="900" height="200" rx="12" fill="url(#bgPr)" stroke="#30363d" stroke-width="1"/>
+  <text x="450" y="85" font-family="monospace" font-size="42" font-weight="bold" fill="#ff0033" text-anchor="middle">dont-get-hacked-openclaw</text>
+  <text x="450" y="125" font-family="monospace" font-size="16" fill="#c9d1d9" text-anchor="middle">How to harden a VPS before letting an AI agent move in</text>
+  <text x="450" y="160" font-family="monospace" font-size="13" fill="#00ff88" text-anchor="middle">sinCodes11 · defensive / educational · github.com/sinCodes11/dont-get-hacked-openclaw</text>
 </svg>

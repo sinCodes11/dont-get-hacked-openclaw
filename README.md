@@ -1,8 +1,12 @@
-# how i locked down a VPS before letting another AI agent move in
-
 <div align="center">
-  <img src="assets/banner.svg" width="100%" />
+  <img src="assets/banner.svg" width="100%"/>
 </div>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/focus-VPS%20hardening-ff0033?style=flat-square" alt="focus">
+  <img src="https://img.shields.io/badge/guide-security%20write-up-00ff88?style=flat-square" alt="guide">
+</p>
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/Linux-VPS_Hardening-00ff88?style=flat-square" alt="VPS">
